@@ -324,7 +324,7 @@ class Asymptotics:
 
         self.I_2d = 1/self.spot_vol**2
 
-        self.I_3d = (-6) * self.rho * self.K11 * (* self.spot_vol_prime /
+        self.I_3d = (-6) * self.rho * self.K11 * (self.spot_vol_prime /
                                                   (self.spot_vol**4))
 
     def get_log_strike(self):
@@ -340,8 +340,7 @@ class Asymptotics:
 
         if self.beta >= 2/3 * self.H and self.beta < self.H:
 
-            print('Attention: First order approximation used.
-                  For 2nd order approximation choose beta < 2/3 H.')
+            print('Attention: 1st order approximation used.')
 
             result = 1/2 * (self.k**2) * self.I_2d * (self.t**(2*self.beta -
                                                                2*self.H))
