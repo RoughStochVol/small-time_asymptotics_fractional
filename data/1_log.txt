@@ -1,0 +1,15 @@
+# Parameters # 
+Simulation ID: 1 
+Spot price: 1 
+Spot variance: 0.0654 
+Vol of vol: 0 
+Rho: 0 
+Hurst index: 0.5 
+Time steps: 500 
+MC runs (individual batches): 100000 
+Flag: c 
+Last time: 1 
+Log strike constant: 0.4 
+Beta: 0.3 
+Number of batches (each with MC runs): 1000 
+BS GBM Monte Carlo Samples: 100000000 
